@@ -18,3 +18,9 @@ header {
   background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
 }
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
