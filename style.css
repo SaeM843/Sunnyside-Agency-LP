@@ -14,13 +14,53 @@
   --font-size: 18px;
 }
 
+body {
+  font-size: var(--font-size);
+  font-family: "Barlow", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 header {
   background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
+  color: var(--white);
+  height: 80vh;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
+}
+
+.header-top nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-top nav ul li a {
+  font-weight: 500;
+  padding: 0 20px;
+  color: var(--white);
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.main-title h1 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 45px;
+  font-size: 55px;
 }
