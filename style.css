@@ -21,6 +21,7 @@ body {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 header {
@@ -28,24 +29,31 @@ header {
   background-size: cover;
   color: var(--white);
   height: 80vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .header-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  height: 60px;
+  padding: 0 20px;
 }
 
 .header-top nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+  font-size: 20px;
+}
+
+.header-top nav ul li:not(:last-child) {
+  margin-right: 20px;
+  font-weight: 500;
 }
 
 .header-top nav ul li a {
-  font-weight: 500;
-  padding: 0 20px;
   color: var(--white);
 }
 
@@ -54,13 +62,16 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  flex-grow: 1;
 }
 
 .main-title h1 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   letter-spacing: 6px;
-  margin-bottom: 45px;
-  font-size: 55px;
+  font-size: 70px;
+}
+
+.arrow-img {
+  margin-top: 60px;
 }
