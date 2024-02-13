@@ -17,6 +17,7 @@
 body {
   font-size: var(--font-size);
   font-family: "Barlow", sans-serif;
+  background-color: #fffbf8;
 }
 
 a {
