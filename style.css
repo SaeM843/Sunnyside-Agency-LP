@@ -90,11 +90,12 @@ header {
 }
 
 .column {
-  flex-grow: 1;
+  flex: 1;
 }
 
 .column img {
   max-width: none;
   max-height: none;
-  background-size: cover;
+  object-fit: cover;
+  display: inline;
 }
