@@ -76,3 +76,25 @@ header {
 .arrow-img {
   margin-top: 60px;
 }
+
+.column5 {
+  background-image: url(./images/desktop/image-graphic-design.jpg);
+}
+
+.column6 {
+  background-image: url(./images/desktop/image-photography.jpg);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex-grow: 1;
+}
+
+.column img {
+  max-width: none;
+  max-height: none;
+  background-size: cover;
+}
