@@ -25,6 +25,11 @@ a {
   cursor: pointer;
 }
 
+img {
+  max-width: none;
+  max-height: none;
+}
+
 header {
   background-image: url(./images/desktop/image-header.jpg);
   background-size: cover;
@@ -94,8 +99,18 @@ header {
 }
 
 .column img {
+  width: 100%;
+}
+
+/* .column {
+  display: flex;
+  flex-direction: column;
+} */
+
+/* .column img {
+  flex-grow: 1;
   max-width: none;
   max-height: none;
   object-fit: cover;
   display: inline;
-}
+} */
