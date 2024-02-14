@@ -84,14 +84,17 @@ header {
 
 .column5 {
   background-image: url(./images/desktop/image-graphic-design.jpg);
+  background-size: cover;
 }
 
 .column6 {
   background-image: url(./images/desktop/image-photography.jpg);
+  background-size: cover;
 }
 
 .row {
   display: flex;
+  height: 619.72px;
 }
 
 .column {
