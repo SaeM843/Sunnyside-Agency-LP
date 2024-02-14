@@ -109,6 +109,14 @@ header {
   width: 100%;
 }
 
+.text-area {
+  width: 70%;
+}
+
+.bottom-text-area {
+  width: 50%;
+}
+
 /* .column {
   display: flex;
   flex-direction: column;
