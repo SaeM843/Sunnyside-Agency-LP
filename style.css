@@ -117,15 +117,8 @@ header {
   width: 50%;
 }
 
-/* .column {
-  display: flex;
-  flex-direction: column;
-} */
-
-/* .column img {
-  flex-grow: 1;
-  max-width: none;
-  max-height: none;
-  object-fit: cover;
-  display: inline;
-} */
+.text-area h2,
+.text-area a,
+.bottom-text-area h3 {
+  font-family: "Fraunces", serif;
+}
