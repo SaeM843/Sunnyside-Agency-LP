@@ -178,3 +178,19 @@ header {
 .bottom-text-desc {
   font-weight: 600;
 }
+
+article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.testimonial {
+  display: flex;
+}
