@@ -8,7 +8,7 @@
   --desaturated-blue: hsl(212, 27%, 19%);
   --grayish-blue: hsl(213, 9%, 39%);
   --dark-grayish-blue: hsl(232, 10%, 55%);
-  --grayish-blue: hsl(210, 4%, 67%);
+  --grayish-light--blue: hsl(210, 4%, 67%);
   --white: hsl(0, 0%, 100%);
 
   --font-size: 18px;
@@ -183,6 +183,16 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 80vh;
+}
+
+article h2 {
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  color: var(--grayish-light--blue);
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 70px;
 }
 
 .testimonials {
@@ -190,7 +200,44 @@ article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
+  width: 80%;
+  text-align: center;
 }
 .testimonial {
   display: flex;
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.client img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 70px;
+}
+
+.client > p {
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+  margin-bottom: 70px;
+  width: 95%;
+}
+
+.name {
+  font-family: "Fraunces", serif;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.occupation {
+  color: var(--grayish-light--blue);
+  font-weight: 600;
 }
