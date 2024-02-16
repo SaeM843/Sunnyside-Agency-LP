@@ -310,6 +310,16 @@ footer {
   /* margin-bottom: 30px; */
 }
 
+ion-icon {
+  font-size: 25px;
+  color: var(--footer);
+}
+
+ion-icon:hover,
+.footer-nav > ul > li > a:hover {
+  color: white;
+}
+
 .social-media > ul li:not(:last-child) {
   padding-right: 25px;
 }
