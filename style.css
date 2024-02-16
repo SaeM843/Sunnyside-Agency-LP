@@ -21,7 +21,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  /* text-decoration: none; */
   cursor: pointer;
 }
 
@@ -61,6 +61,7 @@ header {
 
 .header-top nav ul li a {
   color: var(--white);
+  text-decoration: none;
 }
 
 .main-title {
@@ -110,7 +111,7 @@ header {
 }
 
 .text-area {
-  width: 70%;
+  width: 57%;
 }
 
 .bottom-text-area {
@@ -121,4 +122,34 @@ header {
 .text-area a,
 .bottom-text-header {
   font-family: "Fraunces", serif;
+}
+
+.text-area-header {
+  font-weight: 900;
+  font-size: 47px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.column-desc {
+  color: var(--grayish-blue);
+  font-weight: 600;
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.text-area a {
+  text-transform: uppercase;
+  color: var(--desaturated-blue);
+  font-weight: 900;
+}
+
+.underline-yellow {
+  text-decoration-color: var(--yellow);
+  text-decoration-thickness: 5px;
+}
+
+.underline-red {
+  text-decoration-color: var(--soft-red);
+  text-decoration-thickness: 5px;
 }
