@@ -117,8 +117,8 @@ header {
   width: 50%;
 }
 
-.text-area h2,
+.text-area-header,
 .text-area a,
-.bottom-text-area h3 {
+.bottom-text-header {
   font-family: "Fraunces", serif;
 }
