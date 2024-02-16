@@ -377,6 +377,7 @@ ion-icon:hover,
 
   .row3 {
     flex-direction: column;
+    height: 100%;
   }
 
   .column1,
@@ -397,6 +398,7 @@ ion-icon:hover,
 
   .column5 {
     background-image: url(./images/mobile/image-graphic-design.jpg);
+    background-size: auto;
   }
 
   .column6 {
