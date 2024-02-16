@@ -97,7 +97,22 @@ header {
 }
 
 .arrow-img {
-  margin-top: 60px;
+  /* margin-top: 60px; */
+  /* animation-name: jump;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-direction: normal; */
+  height: 7.5rem;
+  width: auto;
+  animation: jump 1s ease-in infinite alternate;
+}
+
+@keyframes jump {
+  to {
+    transform: translateY(2.5rem);
+  }
 }
 
 .row {
