@@ -359,4 +359,8 @@ ion-icon:hover,
   header {
     background-image: url(./images/mobile/image-header.jpg);
   }
+
+  .main-title {
+    text-align: center;
+  }
 }
