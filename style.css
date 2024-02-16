@@ -14,6 +14,26 @@
   --font-size: 18px;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
 body {
   font-size: var(--font-size);
   font-family: "Barlow", sans-serif;
@@ -97,13 +117,8 @@ header {
 }
 
 .arrow-img {
-  /* margin-top: 60px; */
-  /* animation-name: jump;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-direction: normal; */
+  margin-top: 60px;
+
   height: 7.5rem;
   width: auto;
   animation: jump 1s ease-in infinite alternate;
