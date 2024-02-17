@@ -381,7 +381,7 @@ ion-icon:hover,
     display: none;
   }
 
-  .mobile-nav {
+  .mobile-nav.active {
     display: block;
     position: fixed;
     left: 50%;
@@ -393,7 +393,7 @@ ion-icon:hover,
     width: 80%;
   }
 
-  .mobile-nav:before {
+  .mobile-nav.active:before {
     content: "";
     position: absolute;
     right: 0;
@@ -479,9 +479,6 @@ ion-icon:hover,
     min-height: 100vh;
 
     /* padding: 50px 0 90px 0; */
-  }
-
-  .testimonials {
   }
 
   .client:not(.client3) {
