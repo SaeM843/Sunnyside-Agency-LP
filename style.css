@@ -35,6 +35,7 @@ dd {
 }
 
 body {
+  width: 100%;
   font-size: var(--font-size);
   font-family: "Barlow", sans-serif;
   background-color: #fffbf8;
@@ -61,6 +62,10 @@ header {
   height: 80vh;
   display: flex;
   flex-direction: column;
+}
+
+.mobile-menu {
+  display: none;
 }
 
 .header-top {
@@ -99,6 +104,10 @@ header {
   border-radius: 20px;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 .main-title {
@@ -247,7 +256,7 @@ article h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100%;
+  /* height: 100%; */
   width: 80%;
   text-align: center;
 }
@@ -355,10 +364,47 @@ ion-icon:hover,
 }
 
 /* For mobile */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.9px) {
   header {
     background-image: url(./images/mobile/image-header.jpg);
-    height: 100vh;
+    /* height: 100vh; */
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .header-top nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    background: var(--white);
+    text-align: center;
+    padding: 2rem;
+    width: 80%;
+  }
+
+  .mobile-nav:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -1.1rem;
+    border-top: 0.6rem solid transparent;
+    border-bottom: 0.6rem solid var(--white);
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid var(--white);
+  }
+
+  .mobile-nav ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
   }
 
   .main-title {
@@ -377,7 +423,7 @@ ion-icon:hover,
 
   .row3 {
     flex-direction: column;
-    height: 100%;
+    min-height: 100%;
   }
 
   .column1,
@@ -392,22 +438,29 @@ ion-icon:hover,
     p {
       font-size: 20px;
       line-height: 1.5;
-      width: 400px;
+      max-width: 400px;
     }
   }
 
   .column5 {
     background-image: url(./images/mobile/image-graphic-design.jpg);
-    background-size: auto;
+    /* background-size: cover; */
+    min-height: 80vh;
+    /* min-height: 100px; */
   }
 
   .column6 {
     background-image: url(./images/mobile/image-photography.jpg);
+    min-height: 80vh;
   }
 
   article {
-    height: auto;
-    padding: 50px 0 90px 0;
+    min-height: 100vh;
+
+    /* padding: 50px 0 90px 0; */
+  }
+
+  .testimonials {
   }
 
   .client:not(.client3) {
@@ -423,7 +476,7 @@ ion-icon:hover,
     margin-bottom: 40px;
   }
   .testimonial {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
 
   .image-gallery {
