@@ -47,15 +47,15 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="header-top">
+      <div class="banner">
+        <header>
           <img src="./images/logo.svg" class="desktop-logo" alt="logo" />
           <nav>
             <ul>
               <li><a href="#">About</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="contact">Contact</a></li>
             </ul>
           </nav>
 
@@ -65,7 +65,7 @@
             class="mobile-menu"
             id="menu"
           />
-        </div>
+        </header>
         <div class="main-title">
           <h1>WE ARE CREATIVES</h1>
           <img
@@ -74,7 +74,7 @@
             alt="Arrow"
           />
         </div>
-      </header>
+      </div>
 
       <!-- nav for mobile -->
       <div class="mobile-nav" id="mobileNav">
@@ -88,66 +88,78 @@
         </nav>
       </div>
 
-      <main>
-        <div class="row row1">
-          <div class="column column1">
-            <div class="text-area">
-              <h2 class="text-area-header">Transform your brand</h2>
-              <p class="column-desc">
-                We are a full-service creative agency specializing in helping
-                brands grow fast. Engage your clients through compelling visuals
-                that do most of the marketing for you.
-              </p>
-              <a class="underline-yellow underline" href="#">Learn more</a>
-            </div>
+      <section class="grid">
+        <!-- First row -->
+
+          <div class="column1 intro">
+
+            <h2 class="text-area-header">Transform your brand</h2>
+            <p class="column-desc">
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+
+            <a class="underline-yellow underline" href="#">Learn more</a>
+
           </div>
-          <div class="column column2">
-            <img src="./images/desktop/image-transform.jpg" />
+          <div class="column-right column2">
+            <img
+              src="./images/desktop/image-transform.jpg"
+              class="img-one__desktop"
+            />
+            <img
+              src="./images/mobile/image-transform.jpg"
+              class="img-one__mobile"
+            />
           </div>
+
+
+        <!-- Second row -->
+
+          <div class="column3">
+            <img
+              src="./images/desktop/image-stand-out.jpg"
+              class="img-two__desktop"
+            />
+            <img
+              src="./images/mobile/image-stand-out.jpg"
+              class="img-two__mobile"
+            />
+          </div>
+          <div class="column-right column4 intro">
+            <h2 class="text-area-header">Stand out to the right audience</h2>
+            <p class="column-desc">
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a class="underline-red underline" href="#">Learn more</a>
+          </div>
+
+
+        <!-- Third row -->
+        <div class="column5 offers">
+          <h3 class="bottom-text-header">Graphic design</h3>
+          <p class="bottom-text-desc">
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
+          </p>
         </div>
 
-        <div class="row row2">
-          <div class="column column3">
-            <img src="./images/desktop/image-stand-out.jpg" />
-          </div>
-          <div class="column column4">
-            <div class="text-area">
-              <h2 class="text-area-header">Stand out to the right audience</h2>
-              <p class="column-desc">
-                Using a collaborative formula of designers, researchers,
-                photographers, videographers, and copywriters, we’ll build and
-                extend your brand in digital places.
-              </p>
-              <a class="underline-red underline" href="#">Learn more</a>
-            </div>
+          <div class="column6 offers">
+            <h3 class="bottom-text-header">Photography</h3>
+            <p class="bottom-text-desc">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
           </div>
         </div>
+      </section>
 
-        <div class="row row3">
-          <div class="column column5">
-            <div class="bottom-text-area">
-              <h3 class="bottom-text-header">Graphic design</h3>
-              <p class="bottom-text-desc">
-                Great design makes you memorable. We deliver artwork that
-                underscores your brand message and captures potential clients’
-                attention.
-              </p>
-            </div>
-          </div>
-          <div class="column column6">
-            <div class="bottom-text-area">
-              <h3 class="bottom-text-header">Photography</h3>
-              <p class="bottom-text-desc">
-                Increase your credibility by getting the most stunning,
-                high-quality photos that improve your business image.
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
 
-      <article>
-        <div class="testimonials">
+        <section class="testimonials">
           <h2>Client testimonials</h2>
           <div class="testimonial">
             <div class="client">
@@ -186,18 +198,19 @@
               </div>
             </div>
           </div>
-        </div>
-      </article>
+        </section>
 
       <div class="image-gallery">
-        <div><img src="./images/desktop/image-gallery-milkbottles.jpg" /></div>
+        <div>
+          <img src="./images/desktop/image-gallery-milkbottles.jpg" />
+        </div>
         <div><img src="./images/desktop/image-gallery-orange.jpg" /></div>
         <div><img src="./images/desktop/image-gallery-cone.jpg" /></div>
         <div><img src="./images/desktop/image-gallery-sugarcubes.jpg" /></div>
       </div>
 
       <footer>
-        <!-- <img src="./images/logo.svg" class="footer-logo" alt="logo" /> -->
+        <img src="./images/logo.svg" class="footer-logo" alt="logo" />
 
         <svg
           class="footer-logo"
