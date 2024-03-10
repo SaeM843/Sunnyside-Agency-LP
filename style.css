@@ -45,6 +45,10 @@ h3 {
   font-weight: 900;
 }
 
+li {
+  list-style: none;
+}
+
 .banner {
   height: 80vh;
   min-height: 600px;
@@ -130,7 +134,7 @@ header nav ul li a {
   flex-direction: column;
   justify-content: center;
   padding: 120px;
-  position: relative;
+  /* position: relative; */
 }
 
 .intro h2 {
@@ -357,57 +361,75 @@ ion-icon:hover,
 }
 
 /* Media Query */
-@media screen and (max-width: 1250px) {
-}
+@media all and (max-width: 1250px) {
+  .intro {
+    padding: 60px;
+  }
+  .offers {
+    padding: 40px 100px;
+  }
 
-a:not(.underline) {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-li {
-  list-style: none;
+  .testimonials {
+    margin: 130px;
+  }
 }
 
 .mobile-menu {
   display: none;
 }
 
-/* .header-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 20px 40px 0 40px;
+@media all and (max-width: 1000px) {
+  .banner {
+    /* background-image: url("./images/mobile/image-header.jpg"); */
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) 590px 590px;
+    grid-template-areas:
+      "column2"
+      "column1"
+      "column3"
+      "column4"
+      "column5"
+      "column6";
+  }
+
+  .intro {
+    padding: 100px;
+  }
+  .testimonials {
+    margin: 60px 0;
+  }
+
+  .testimonial {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .testimonial-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
-
-.header-top nav ul li:not(:last-child) {
-  margin-right: 50px;
-}
-
-.header-top nav ul li a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.header-top nav ul li:nth-child(4) {
-  font-family: "Fraunces", serif;
-  background-color: white;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-transform: uppercase;
-  font-size: 15px;
-} */
-
-/* .header-top nav ul li:nth-child(4) a {
-  color: black;
-  font-weight: 600;
-} */
 
 .mobile-nav {
   display: none;
 }
 
+@media all and (max-width: 600px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .column5 {
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+  }
+
+  .column6 {
+    background-image: url("./images/mobile/image-photography.jpg");
+  }
+}
 /* .main-title h1 {
   font-family: "Fraunces", serif;
   font-weight: 900;
