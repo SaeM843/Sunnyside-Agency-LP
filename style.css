@@ -359,6 +359,9 @@ ion-icon:hover,
 
 /* Media Query */
 @media all and (max-width: 1250px) {
+  .main-title h1 {
+    text-align: center;
+  }
   .intro {
     padding: 60px;
   }
@@ -376,8 +379,8 @@ ion-icon:hover,
 }
 
 @media all and (max-width: 1000px) {
-  .banner {
-    /* background-image: url("./images/mobile/image-header.jpg"); */
+  header nav ul li a {
+    margin-right: 15px;
   }
 
   .grid {
